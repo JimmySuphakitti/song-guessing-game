@@ -1,0 +1,38 @@
+# ============================================================
+#  Thai Song Guessing Game — .gitignore
+# ============================================================
+
+# --- Runtime / Generated ---
+cache/                   # iTunes API response cache (auto-generated at runtime)
+database/game.sqlite     # SQLite DB (created automatically on first run)
+database/*.sqlite        # catch-all for any other sqlite files
+
+# --- Logs ---
+*.log
+logs/
+php_errors.log
+
+# --- OS & Editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.suo
+*.user
+
+# --- Environment Secrets ---
+.env
+.env.local
+.env.*.local
+
+# --- PHP ---
+vendor/                  # Composer dependencies (not used yet, but just in case)
+
+# --- Node (scripts folder remnant) ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# --- Docker ---
+# docker-compose.override.yml  # uncomment if you use local overrides

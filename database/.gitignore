@@ -1,0 +1,4 @@
+# Ignore SQLite database — auto-created by Database.php on first run
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

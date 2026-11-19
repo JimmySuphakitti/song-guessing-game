@@ -1,0 +1,21 @@
+# Normalize line endings for cross-platform consistency
+* text=auto
+
+# Force LF for server-side files (runs on Linux container)
+*.php   text eol=lf
+*.js    text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.sql   text eol=lf
+*.md    text eol=lf
+*.sh    text eol=lf
+
+# Binary — no line-ending conversion
+*.wav   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.ico   binary
